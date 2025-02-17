@@ -23,14 +23,6 @@ packer.startup(function(use)
     --Load an icon for the footer of the dashboard
     use("kyazdani42/nvim-web-devicons")
     
-	-- Commenting plugin
-	use {
-		'numToStr/Comment.nvim',
-		config = function()
-			require('Comment').setup()
-		end
-	}
-
 	-- Floating terminal
 	use ({"akinsho/toggleterm.nvim",
 	   config = function()
@@ -38,13 +30,14 @@ packer.startup(function(use)
 			        -- the size of a quarter of the screen
 					size = function(term)
 						if term.direction == "vertical" then
-							return vim.o.columns * 0.5 -- Half of the screen's width
+							return vim.o.columns * 0.50 -- Half of the screen's width
 						elseif term.direction == "horizontal" then
 							return vim.o.lines * 0.5 -- Half of the screen's height (if horizontal)
 						end
 					end,
-					direction='vertical',
-					open_mapping = [[<c-t>]] --open the terminal with <c-t>
+					direction='vertical', -- | 'vertical' | 'window' | 'float',
+					open_mapping = [[<c-t>]], --open the terminal with <c-t>,
+                    broder='curved'
 				}
 	  end })
 
@@ -58,7 +51,7 @@ packer.startup(function(use)
       config = {
         week_header = {
           enable = true,
-        },
+          concat=" GRUPO SALINAS "},
         shortcut = {},
         footer = {
           '',
@@ -77,26 +70,43 @@ packer.startup(function(use)
 	    })
 	use("nvim-telescope/telescope-file-browser.nvim")
 
+    --monokai pro theme
+    use({"loctvl842/monokai-pro.nvim",
+        config = function()
+            require("monokai-pro").setup({filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+  				-- Enable this will disable filter option
+ 		 day_night = {
+			 enable = true, -- turn off by default
+    		day_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+    		night_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+  		}})
+        end
+    })
 	use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
 	-- Productivity
 	use("vimwiki/vimwiki")
 	use("jreybert/vimagit")
 	use("nvim-orgmode/orgmode")
 
+    -- Paquete para el colapso del código para hacer más eficiente la programación
+    use ({'kevinhwang91/promise-async'})
+    use ({'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'})
+
 	use("folke/which-key.nvim") -- Which Key
 	use("nvim-lualine/lualine.nvim") -- A better statusline
-
+    use("lukas-reineke/indent-blankline.nvim") -- Indent lines
 	-- File management --
+    use ({"neoclide/coc.nvim",branch='release',run="npm ci"}) -- Autocompletion and LSP
     use("vifm/vifm.vim")
 	use("scrooloose/nerdtree")
 	use("tiagofumo/vim-nerdtree-syntax-highlight")
 	use("ryanoasis/vim-devicons")
-
+	use({ "diegoulloao/neofusion.nvim" })
 	-- Tim Pope Plugins --
 	use("tpope/vim-surround")
-
+    use({"ellisonleao/gruvbox.nvim"})
 	-- Syntax Highlighting and Colors --
-	use("PotatoesMaster/i3-vim-syntax")
+	use("mboughaba/i3config.vim")
 	use("kovetskiy/sxhkd-vim")
 	use("vim-python/python-syntax")
 	use("ap/vim-css-color")

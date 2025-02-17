@@ -1,13 +1,12 @@
 local g = vim.g
 local o = vim.o
-local opt = vim.opt
+local opt = vim.opt -- new way to set options
 
 -- cmd('syntax on')
 -- vim.api.nvim_command('filetype plugin indent on')
 
 o.termguicolors = true
 -- o.background = 'dark'
-
 -- Do not save when switching buffers
 -- o.hidden = true
 
@@ -17,11 +16,11 @@ o.updatetime = 200
 
 -- Number of screen lines to keep above and below the cursor
 o.scrolloff = 8
-
+--when pressing enter change the cursor position to the next line 
 -- Better editor UI
 o.number = true
 o.numberwidth = 2
-o.relativenumber = true
+o.relativenumber = false
 o.signcolumn = "yes"
 o.cursorline = true
 
