@@ -74,11 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+  ["coc.nvim"] = {
     loaded = true,
-    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
@@ -86,7 +85,7 @@ _G.packer_plugins = {
     url = "https://github.com/github/copilot.vim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\nâ\2\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\0\0=\4\a\0035\4\b\0=\4\t\3=\3\n\2B\0\2\1K\0\1\0\vconfig\vfooter\1\3\0\0\5FDaniel Vallejo Aldana Û∞∫õ ÓûÄ Óôü  - Computer Scientist Óûñ Û∞∫õ\rshortcut\16week_header\1\0\3\16week_header\0\vfooter\0\rshortcut\0\1\0\1\venable\2\1\0\2\ntheme\nhyper\vconfig\0\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n€\2\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\0\0=\4\a\0035\4\b\0=\4\t\3=\3\n\2B\0\2\1K\0\1\0\vconfig\vfooter\1\3\0\0\5_Daniel Vallejo Aldana Û∞∫õ ÓûÄ Óôü  - Computer Scientist Óûñ Û∞∫õ - Ó™Ñ  danielvallejo237 \rshortcut\16week_header\1\0\3\vfooter\0\rshortcut\0\16week_header\0\1\0\2\vconcat6 Û∞∫õ ÓûÄ Óôü  PERSONAL COMPUTER Û±êã Û∞ñµ Û±°Ñ  \venable\2\1\0\2\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -103,10 +102,20 @@ _G.packer_plugins = {
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/goyo.vim",
     url = "https://github.com/junegunn/goyo.vim"
   },
-  ["i3-vim-syntax"] = {
+  ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/i3-vim-syntax",
-    url = "https://github.com/PotatoesMaster/i3-vim-syntax"
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["i3config.vim"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/i3config.vim",
+    url = "https://github.com/mboughaba/i3config.vim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["limelight.vim"] = {
     loaded = true,
@@ -118,15 +127,42 @@ _G.packer_plugins = {
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["monokai-pro.nvim"] = {
+    config = { "\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14day_night\1\0\3\17night_filter\rspectrum\venable\2\15day_filter\rspectrum\1\0\2\vfilter\rspectrum\14day_night\0\nsetup\16monokai-pro\frequire\0" },
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
+  },
+  ["neofusion.nvim"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/neofusion.nvim",
+    url = "https://github.com/diegoulloao/neofusion.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/scrooloose/nerdtree"
   },
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n≈\2\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fpresets\1\0\5\15inc_rename\1\26long_message_to_split\2\20command_palette\2\18bottom_search\2\19lsp_doc_border\1\blsp\1\0\2\fpresets\0\blsp\0\roverride\1\0\1\roverride\0\1\0\3 cmp.entry.get_documentation\2\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2\nsetup\nnoice\frequire\0" },
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-base16"] = {
     loaded = true,
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nvim-base16",
     url = "https://github.com/RRethy/nvim-base16"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-palenight.lua"] = {
     loaded = true,
@@ -137,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -157,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["promise-async"] = {
+    loaded = true,
+    path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   ["python-syntax"] = {
     loaded = true,
@@ -179,7 +225,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\ná\1\0\1\2\0\a\1\0189\1\0\0\a\1\1\0X\1\6Ä6\1\2\0009\1\3\0019\1\4\1\24\1\0\1L\1\2\0X\1\bÄ9\1\0\0\a\1\5\0X\1\5Ä6\1\2\0009\1\3\0019\1\6\1\24\1\0\1L\1\2\0K\0\1\0\nlines\15horizontal\fcolumns\6o\bvim\rvertical\14direction\1ÄÄÄˇ\3y\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\tsize\1\0\3\17open_mapping\n<c-t>\14direction\rvertical\tsize\0\0\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\ná\1\0\1\2\0\a\1\0189\1\0\0\a\1\1\0X\1\6Ä6\1\2\0009\1\3\0019\1\4\1\24\1\0\1L\1\2\0X\1\bÄ9\1\0\0\a\1\5\0X\1\5Ä6\1\2\0009\1\3\0019\1\6\1\24\1\0\1L\1\2\0K\0\1\0\nlines\15horizontal\fcolumns\6o\bvim\rvertical\14direction\1ÄÄÄˇ\3á\1\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\tsize\1\0\4\vbroder\vcurved\17open_mapping\n<c-t>\14direction\rvertical\tsize\0\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/Users/danielvallejo/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -237,13 +283,17 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n≈\2\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fpresets\1\0\5\15inc_rename\1\26long_message_to_split\2\20command_palette\2\18bottom_search\2\19lsp_doc_border\1\blsp\1\0\2\fpresets\0\blsp\0\roverride\1\0\1\roverride\0\1\0\3 cmp.entry.get_documentation\2\"vim.lsp.util.stylize_markdown\0021vim.lsp.util.convert_input_to_markdown_lines\2\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
+-- Config for: monokai-pro.nvim
+time([[Config for monokai-pro.nvim]], true)
+try_loadstring("\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14day_night\1\0\3\17night_filter\rspectrum\venable\2\15day_filter\rspectrum\1\0\2\vfilter\rspectrum\14day_night\0\nsetup\16monokai-pro\frequire\0", "config", "monokai-pro.nvim")
+time([[Config for monokai-pro.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\ná\1\0\1\2\0\a\1\0189\1\0\0\a\1\1\0X\1\6Ä6\1\2\0009\1\3\0019\1\4\1\24\1\0\1L\1\2\0X\1\bÄ9\1\0\0\a\1\5\0X\1\5Ä6\1\2\0009\1\3\0019\1\6\1\24\1\0\1L\1\2\0K\0\1\0\nlines\15horizontal\fcolumns\6o\bvim\rvertical\14direction\1ÄÄÄˇ\3y\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\tsize\1\0\3\17open_mapping\n<c-t>\14direction\rvertical\tsize\0\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+try_loadstring("\27LJ\2\ná\1\0\1\2\0\a\1\0189\1\0\0\a\1\1\0X\1\6Ä6\1\2\0009\1\3\0019\1\4\1\24\1\0\1L\1\2\0X\1\bÄ9\1\0\0\a\1\5\0X\1\5Ä6\1\2\0009\1\3\0019\1\6\1\24\1\0\1L\1\2\0K\0\1\0\nlines\15horizontal\fcolumns\6o\bvim\rvertical\14direction\1ÄÄÄˇ\3á\1\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\tsize\1\0\4\vbroder\vcurved\17open_mapping\n<c-t>\14direction\rvertical\tsize\0\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]

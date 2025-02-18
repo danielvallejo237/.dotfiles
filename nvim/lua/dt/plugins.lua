@@ -51,11 +51,11 @@ packer.startup(function(use)
       config = {
         week_header = {
           enable = true,
-          concat=" GRUPO SALINAS "},
+          concat=" 󰺛    PERSONAL COMPUTER 󱐋 󰖵 󱡄  "},
         shortcut = {},
         footer = {
           '',
-          "Daniel Vallejo Aldana 󰺛    - Computer Scientist  󰺛"
+          "Daniel Vallejo Aldana 󰺛    - Computer Scientist  󰺛 -   danielvallejo237 "
         },
       },
     }
